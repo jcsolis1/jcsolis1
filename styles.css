@@ -1,0 +1,111 @@
+/* Font & Base Styles */
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ffffff;
+    color: #2B2220;
+    margin: 0;
+    padding: 0 2rem 2rem 2rem;
+  }
+  
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    color: #32746D;
+    text-transform: uppercase;
+    margin-top: 2rem;
+  }
+  
+  h2 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    color: #65524D;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: #8B716B;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+  }
+  
+  /* Nav Bar */
+  nav {
+    background-color: #D9CFC1; /* Use your own alt here if not using coral */
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0.3rem 0;
+  }
+  
+  nav a {
+    color: #2B2220;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+  }
+  
+  nav a:hover {
+    color: #65524D;
+    text-decoration: underline;
+  }
+  
+  /* Styling <strong> and <em> like tags */
+  strong {
+    background-color: #D9CFC1;
+    color: white;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  em {
+    background-color: #65524D;
+    color: white;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-style: italic;
+  }
+  
+  /* Examples Section */
+  .examples ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .examples li {
+    margin: 0.5rem 0;
+  }
+  
+  .examples a {
+    background-color: #2B2220;
+    color: #D9CFC1;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  
+  .examples a:hover {
+    background-color: #65524D;
+  }
+  
