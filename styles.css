@@ -1,111 +1,251 @@
 /* Font & Base Styles */
 body {
-    font-family: 'Work Sans', sans-serif;
-    background-color: #ffffff;
-    color: #2B2220;
-    margin: 0;
-    padding: 0 2rem 2rem 2rem;
-  }
-  
-  h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 3rem;
-    color: #32746D;
-    text-transform: uppercase;
-    margin-top: 2rem;
-  }
-  
-  h2 {
-    font-family: 'Lora', serif;
-    font-size: 2rem;
-    color: #65524D;
-    text-transform: uppercase;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  h3 {
-    font-family: 'Lora', serif;
-    font-size: 1.5rem;
-    color: #8B716B;
-    margin-bottom: 0.5rem;
-  }
-  
-  p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 800px;
-  }
-  
-  /* Nav Bar */
-  nav {
-    background-color: #D9CFC1; /* Use your own alt here if not using coral */
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    margin: 0.3rem 0;
-  }
-  
-  nav a {
-    color: #2B2220;
-    text-decoration: none;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1rem;
-  }
-  
-  nav a:hover {
-    color: #65524D;
-    text-decoration: underline;
-  }
-  
-  /* Styling <strong> and <em> like tags */
-  strong {
-    background-color: #D9CFC1;
-    color: white;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-weight: bold;
-  }
-  
-  em {
-    background-color: #65524D;
-    color: white;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-style: italic;
-  }
-  
-  /* Examples Section */
-  .examples ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .examples li {
-    margin: 0.5rem 0;
-  }
-  
-  .examples a {
-    background-color: #2B2220;
-    color: #D9CFC1;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: background 0.3s;
-  }
-  
-  .examples a:hover {
-    background-color: #65524D;
-  }
-  
+  font-family: 'Work Sans', sans-serif;
+  background-color: #ffffff;
+  color: #2B2220;
+  margin: 0;
+  padding: 0 2rem 2rem 2rem;
+}
+
+h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3rem;
+  color: #32746D;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 2rem;
+  color: #65524D;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  color: #8B716B;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+/* Nav Bar */
+nav {
+  background-color: #D9CFC1; /* Use your own alt here if not using coral */
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0.3rem 0;
+}
+
+nav a {
+  color: #2B2220;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #65524D;
+  text-decoration: underline;
+}
+
+/* Styling <strong> and <em> like tags */
+strong {
+  background-color: #D9CFC1;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+em {
+  background-color: #65524D;
+  color: white;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+/* Examples Section */
+.examples ul {
+  list-style: none;
+  padding: 0;
+}
+
+.examples li {
+  margin: 0.5rem 0;
+}
+
+.examples a {
+  background-color: #2B2220;
+  color: #D9CFC1;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.examples a:hover {
+  background-color: #65524D;
+}
+
+/* Flexbox Layout with 3+ Divs */
+.flex-layout {
+margin-top: 3rem;
+}
+
+.flex-cards {
+display: flex;
+justify-content: space-between;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+.card {
+background-color: #D9CFC1;
+padding: 1rem;
+border: 2px solid #65524D;
+border-radius: 8px;
+flex: 1 1 30%;
+min-width: 220px;
+position: relative;
+}
+
+.card h3 {
+margin-top: 0;
+}
+
+.card button {
+margin-top: 1rem;
+padding: 0.5rem 1rem;
+background-color: #65524D;
+color: white;
+border: 1px solid #2B2220;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.card button:hover {
+background-color: #2B2220;
+}
+
+/* Sticky Header */
+.sticky-header {
+position: sticky;
+top: 0;
+background-color: white;
+padding: 1rem 0;
+z-index: 10;
+border-bottom: 2px solid #D9CFC1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.flex-cards {
+  flex-direction: column;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+nav li {
+  margin: 0;
+}
+}
+
+
+
+/* Fixed Sidebar Layout */
+.sidebar {
+position: fixed;
+top: 0;
+left: 0;
+width: 256px;
+height: 100vh;
+background-color: #D9CFC1;
+padding: 2rem 1rem;
+z-index: 1000;
+}
+
+.sidebar ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.sidebar li {
+margin-bottom: 1rem;
+}
+
+.sidebar a {
+color: #2B2220;
+text-decoration: none;
+font-weight: 500;
+}
+
+.sidebar a:hover {
+color: #65524D;
+}
+
+/* Content shifted right to allow sidebar space */
+.container.content {
+margin-left: 256px;
+padding: 2rem;
+position: relative;
+}
+
+/* Placeholder for a hamburger menu icon */
+.menu-icon {
+display: none;
+}
+
+/* Responsive Layout: Sidebar to top bar */
+@media (max-width: 768px) {
+.sidebar {
+  position: static;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container.content {
+  margin-left: 0;
+  padding: 1rem;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-icon {
+  display: none;
+}
+}
