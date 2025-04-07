@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AME 220 - Styled Page</title>
-  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD/0J4A/9+9AP/SowD/48QA/9qzAP/lyQBZll8AUYdWAF+hbQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd3d3d3d3dmZmZmZ3dmZmiIiIhmZmiIgAAAAIiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiJERERERERERBERERERERERMzMzNTMzMzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lora&family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <nav>
+  <nav class="sidebar">
+    <div class="menu-icon">&#9776;</div>
     <ul>
-      <li><a href="#">about</a></li>
-      <li><a href="#">lessons</a></li>
-      <li><a href="#">examples</a></li>
-      <li><a href="https://www.asu.edu" target="_blank">school of arts media and engineering</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#lessons">lessons</a></li>
+      <li><a href="#examples">examples</a></li>
+      <li><a href="https://www.asu.edu" target="_blank">ame site</a></li>
     </ul>
   </nav>
 
-  <header class="hero">
-    <h1>WELCOME TO AME 220</h1>
-  </header>
+  <div class="container content">
+    <header class="hero">
+      <h1>WELCOME TO AME 220</h1>
+    </header>
 
-  <main>
-    <section class="about">
-      <h2>ABOUT THE CLASS</h2>
-      <p><em>Lorem</em> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <strong>Excepteur</strong> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </section>
+    <main>
+      <section id="about" class="about">
+        <h2>About the Class</h2>
+        <p><em>Lorem</em> ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p><strong>Excepteur</strong> sint occaecat cupidatat non proident...</p>
+      </section>
 
-    <section class="lessons">
-      <h2>LESSONS</h2>
-      <p><em>Lorem</em> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <strong>Excepteur</strong> sint occaecat cupidatat non proident.</p>
-    </section>
+      <section id="lessons" class="lessons">
+        <h2>Lessons</h2>
+        <p><em>Lorem</em> ipsum dolor sit amet...</p>
+      </section>
 
-    <section class="examples">
-      <h2>EXAMPLES</h2>
-      <ul>
-        <li><a href="https://www.asu.edu" target="_blank">⇗ MIDTERM EXAMPLES</a></li>
-        <li><a href="https://www.asu.edu" target="_blank">⇗ JAVASCRIPT EXAMPLE</a></li>
-        <li><a href="https://www.asu.edu" target="_blank">⇗ EXAMPLE FOR FINAL</a></li>
-        <li><a href="https://www.asu.edu" target="_blank">⇗ GITHUB FOR SOURCE CODE AND OTHER INFO</a></li>
-      </ul>
-    </section>
-  </main>
-
+      <section id="examples" class="examples">
+        <h2>Examples</h2>
+        <ul>
+          <li><a href="https://www.asu.edu" target="_blank">⇗ Midterm Examples</a></li>
+          <li><a href="https://www.asu.edu" target="_blank">⇗ JavaScript Example</a></li>
+          <li><a href="https://www.asu.edu" target="_blank">⇗ Example for Final</a></li>
+          <li><a href="https://www.asu.edu" target="_blank">⇗ GitHub Resources</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
